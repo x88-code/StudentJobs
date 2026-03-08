@@ -5,7 +5,7 @@ export default function Footer() {
     <footer className="bg-gradient-to-b from-gray-900 via-gray-950 to-black text-gray-300">
       <div className="max-w-7xl mx-auto px-4 py-20">
         {/* Main Grid */}
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8 lg:gap-12 mb-16">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 lg:gap-12 mb-16">
           {/* Brand Section */}
           <div className="space-y-6">
             <div className="flex items-center gap-3">
@@ -42,9 +42,6 @@ export default function Footer() {
               {[
                 { name: 'Browse Jobs', href: '/browse-jobs' },
                 { name: 'My Dashboard', href: '/dashboard' },
-                { name: 'How It Works', href: '#' },
-                { name: 'Categories', href: '#' },
-                { name: 'Success Stories', href: '#' },
               ].map((link) => (
                 <li key={link.name}>
                   <Link
@@ -65,10 +62,6 @@ export default function Footer() {
             <ul className="space-y-3 text-sm">
               {[
                 { name: 'Post a Job', href: '/post-job' },
-                { name: 'Pricing', href: '#' },
-                { name: 'Safety Tips', href: '#' },
-                { name: 'Find Talent', href: '#' },
-                { name: 'FAQ', href: '#' },
               ].map((link) => (
                 <li key={link.name}>
                   <Link
@@ -82,22 +75,6 @@ export default function Footer() {
               ))}
             </ul>
           </div>
-
-          {/* Company */}
-          <div className="space-y-4">
-            <h4 className="text-white font-black text-lg">Company</h4>
-            <ul className="space-y-3 text-sm">
-              {[
-                { name: 'About Us', href: '#' },
-                { name: 'Contact', href: '#' },
-                { name: 'Blog', href: '#' },
-                { name: 'Privacy Policy', href: '#' },
-                { name: 'Terms of Service', href: '#' },
-              ].map((link) => (
-                <li key={link.name}>
-                  <a
-                    href={link.href}
-                    className="text-gray-400 hover:text-white hover:translate-x-1 transition-all duration-300 font-medium flex items-center gap-2"
                   >
                     <span>→</span>
                     {link.name}
