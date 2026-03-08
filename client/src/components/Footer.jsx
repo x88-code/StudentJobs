@@ -75,14 +75,6 @@ export default function Footer() {
               ))}
             </ul>
           </div>
-                  >
-                    <span>→</span>
-                    {link.name}
-                  </a>
-                </li>
-              ))}
-            </ul>
-          </div>
         </div>
 
         {/* Divider */}
