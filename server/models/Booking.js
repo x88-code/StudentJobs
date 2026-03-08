@@ -1,16 +1,28 @@
 import mongoose from 'mongoose';
 
 const bookingSchema = new mongoose.Schema({
-  fundiId: {
+  professionalId: {
     type: mongoose.Schema.Types.ObjectId,
     required: true,
-    ref: 'Fundi'
+    ref: 'Professional'
   },
-  name: {
+  clientName: {
     type: String,
     required: true,
   },
-  phone: {
+  clientPhone: {
+    type: String,
+    required: true,
+  },
+  service: {
+    type: String,
+    required: true,
+  },
+  description: {
+    type: String,
+    required: true,
+  },
+  location: {
     type: String,
     required: true,
   },
@@ -18,7 +30,6 @@ const bookingSchema = new mongoose.Schema({
     type: String,
     required: true,
   },
-  notes: String,
 }, { timestamps: true });
 
 export default mongoose.model('Booking', bookingSchema);

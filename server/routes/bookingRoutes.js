@@ -1,9 +1,9 @@
 import express from 'express';
-import { createBooking, getFundiBookings } from '../controllers/bookingController.js'; // <-- FIXED LINE
+import { createBooking, getProfessionalBookings } from '../controllers/bookingController.js';
 
 const router = express.Router();
 
-router.post('/', createBooking); 
-router.get('/:fundiId', getFundiBookings);
+router.post('/', createBooking);
+router.get('/:professionalId', getProfessionalBookings);
 
 export default router;
