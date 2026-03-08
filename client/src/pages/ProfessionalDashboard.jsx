@@ -15,6 +15,15 @@ export default function ProfessionalDashboard() {
   const isLoggedIn = !!token;
 
   useEffect(() => {
+    // If not logged in, redirect to login page
+    if (!isLoggedIn) {
+      navigate('/professional-login');
+      return;
+    }
+    fetchBookings();
+  }, [isLoggedIn, navigate]);
+
+  useEffect(() => {
     if (!token) {
       navigate('/professional-login');
       return;
