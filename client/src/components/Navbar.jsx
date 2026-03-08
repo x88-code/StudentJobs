@@ -3,16 +3,19 @@ import { Link } from 'react-router-dom';
 import { Bars3Icon, XMarkIcon } from '@heroicons/react/24/outline';
 import { Dialog, DialogPanel } from '@headlessui/react';
 
-const navigation = [
+// 1. Keep only static links outside
+const staticNavigation = [
   { name: 'Home', href: '/' },
   { name: 'Browse Jobs', href: '/browse-jobs' },
-  { name: 'Post Job', href: isLoggedIn ? '/post-job' : '/professional-register' },
   { name: 'Dashboard', href: '/dashboard' },
 ];
 
 export default function Navbar() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
-  const [isLoggedIn] = useState(false);
+  
+  // 2. Check for the token to see if they are logged in
+  const token = localStorage.getItem('token');
+  const isLoggedIn = !!token;
 
   return (
     <header className="fixed inset-x-0 top-0 z-50 bg-white/95 backdrop-blur-md border-b border-gray-200/50 shadow-sm">
