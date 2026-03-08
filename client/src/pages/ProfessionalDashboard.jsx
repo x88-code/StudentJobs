@@ -12,6 +12,8 @@ export default function ProfessionalDashboard() {
   const professionalName = localStorage.getItem('professionalName');
   const token = localStorage.getItem('token');
 
+  const isLoggedIn = !!token;
+
   useEffect(() => {
     if (!token) {
       navigate('/professional-login');
