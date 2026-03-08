@@ -5,7 +5,7 @@ import { Dialog, DialogPanel } from '@headlessui/react';
 
 const navigation = [
   { name: 'Home', href: '/' },
-  { name: 'Browse Jobs', href: '/jobs' },
+  { name: 'Browse Jobs', href: '/browse-jobs' },
   { name: 'Post Job', href: '/post-job' },
   { name: 'Dashboard', href: '/dashboard' },
 ];
@@ -49,13 +49,13 @@ export default function Navbar() {
           {!isLoggedIn ? (
             <>
               <Link
-                to="/login"
+                to="/professional-login"
                 className="px-6 py-2.5 text-sm font-bold text-gray-900 border-2 border-gray-300 rounded-lg hover:border-blue-600 hover:text-blue-600 hover:bg-blue-50 transition-all duration-300"
               >
                 Sign In
               </Link>
               <Link
-                to="/signup"
+                to="/professional-register"
                 className="px-6 py-2.5 text-sm font-bold text-white bg-gradient-to-r from-blue-600 via-blue-500 to-purple-600 rounded-lg hover:shadow-lg transition-all duration-300 transform hover:scale-105 active:scale-95"
               >
                 Sign Up
@@ -115,14 +115,14 @@ export default function Navbar() {
             {!isLoggedIn ? (
               <>
                 <Link
-                  to="/login"
+                  to="/professional-login"
                   onClick={() => setMobileMenuOpen(false)}
                   className="block w-full px-4 py-3 text-center text-sm font-bold text-gray-900 border-2 border-gray-300 rounded-lg hover:border-blue-600 hover:text-blue-600 transition-all"
                 >
                   Sign In
                 </Link>
                 <Link
-                  to="/signup"
+                  to="/professional-register"
                   onClick={() => setMobileMenuOpen(false)}
                   className="block w-full px-4 py-3 text-center text-sm font-bold text-white bg-gradient-to-r from-blue-600 to-purple-600 rounded-lg hover:shadow-lg transition-all"
                 >

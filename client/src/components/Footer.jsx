@@ -40,7 +40,7 @@ export default function Footer() {
             <h4 className="text-white font-black text-lg">For Students</h4>
             <ul className="space-y-3 text-sm">
               {[
-                { name: 'Browse Jobs', href: '/jobs' },
+                { name: 'Browse Jobs', href: '/browse-jobs' },
                 { name: 'My Dashboard', href: '/dashboard' },
                 { name: 'How It Works', href: '#' },
                 { name: 'Categories', href: '#' },
