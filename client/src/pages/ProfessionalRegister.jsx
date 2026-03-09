@@ -108,7 +108,7 @@ export default function FundiRegister() {
                   value={formData.service}
                   onChange={handleChange}
                   className="w-full px-4 py-3 bg-slate-700/50 border border-slate-600 rounded-xl text-white placeholder-gray-500 focus:outline-none focus:border-purple-500 focus:ring-2 focus:ring-purple-500/30 transition-all duration-300"
-                  placeholder="Plumbing, Electrical, Carpentry..."
+                  placeholder="e.g., Tutoring, Graphic Design"
                 />
               </div>
 
@@ -120,7 +120,7 @@ export default function FundiRegister() {
                   value={formData.location}
                   onChange={handleChange}
                   className="w-full px-4 py-3 bg-slate-700/50 border border-slate-600 rounded-xl text-white placeholder-gray-500 focus:outline-none focus:border-purple-500 focus:ring-2 focus:ring-purple-500/30 transition-all duration-300"
-                  placeholder="Your service area"
+                  placeholder="e.g., Nairobi, Remote"
                 />
               </div>
 
