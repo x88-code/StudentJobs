@@ -210,7 +210,7 @@ export default function Dashboard() {
                           <span>📁 {job.category}</span>
                           <span>👥 {job.applicants} applicants</span>
                           <span>📅 Deadline: {job.deadline}</span>
-                          <span>💰 <Ksh></Ksh>{job.budget}</span>
+                          <span>💰 Ksh{job.budget}</span>
                         </div>
                       </div>
                       <div className="flex gap-2">
