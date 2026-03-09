@@ -71,8 +71,8 @@ const APPLIED_JOBS = [
 export default function Dashboard() {
   const [activeTab, setActiveTab] = useState('posted');
   const [userProfile] = useState({
-    name: 'Alex Johnson',
-    email: 'alex@student.edu',
+    name: 'Erick Kirui',
+    email: 'erick@student.it',
     profileImage: '👤',
     rating: 4.8,
     totalJobs: 12,
@@ -210,7 +210,7 @@ export default function Dashboard() {
                           <span>📁 {job.category}</span>
                           <span>👥 {job.applicants} applicants</span>
                           <span>📅 Deadline: {job.deadline}</span>
-                          <span>💰 ${job.budget}</span>
+                          <span>💰 <Ksh></Ksh>{job.budget}</span>
                         </div>
                       </div>
                       <div className="flex gap-2">
