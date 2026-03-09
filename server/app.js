@@ -26,7 +26,7 @@ app.use(express.json());
 app.use('/api/professionals', fundiRoutes);
 app.use('/api/bookings', bookingRoutes);
 app.use('/api/auth', authRoutes);
-app.use('/api/jobs', jobRoutes);
+app.use('/jobs', jobRoutes);
 
 // Root route
 app.get('/', (req, res) => res.send('StudentJobs API running'));
