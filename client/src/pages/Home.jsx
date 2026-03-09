@@ -71,19 +71,6 @@ export default function Home() {
               Connect with fellow students. Complete meaningful tasks, earn real money, and build your professional portfolio. Direct payments, no middleman.
             </p>
 
-            {/* Search Bar */}
-            <div className="flex flex-col sm:flex-row gap-3 max-w-2xl mx-auto pt-6">
-              <input
-                type="text"
-                placeholder="Search jobs by title, skill, or category..."
-                value={searchQuery}
-                onChange={(e) => setSearchQuery(e.target.value)}
-                className="input-modern flex-1 text-white placeholder-white/50"
-              />
-              <button className="btn-primary-gradient">
-                Search
-              </button>
-            </div>
 
             {/* CTA Buttons */}
             <div className="flex flex-col sm:flex-row gap-4 justify-center pt-4">
