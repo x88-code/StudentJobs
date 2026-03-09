@@ -13,11 +13,13 @@ dotenv.config();
 const app = express();
 
 // Middleware
+// In server/app.js
 app.use(cors({
   origin: [
-    'https://student-jobs-mauve.vercel.app', // Your live frontend
-    'http://localhost:5173'                  // Your local frontend (Vite default)
+    'https://student-jobs-mauve.vercel.app', 
+    'https://student-jobs-git-main-0xericks-projects.vercel.app'
   ],
+  methods: ['GET', 'POST', 'PUT', 'DELETE'],
   credentials: true
 }));
 app.use(express.json());
@@ -26,7 +28,7 @@ app.use(express.json());
 app.use('/api/professionals', fundiRoutes);
 app.use('/api/bookings', bookingRoutes);
 app.use('/api/auth', authRoutes);
-app.use('/jobs', jobRoutes);
+app.use('/api/jobs', jobRoutes);
 
 // Root route
 app.get('/', (req, res) => res.send('StudentJobs API running'));
