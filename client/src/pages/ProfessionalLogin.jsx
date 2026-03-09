@@ -113,7 +113,7 @@ export default function FundiLogin() {
                 <p className="text-gray-400">
                   Don't have an account?{' '}
                   <Link
-                    to="/fundi-register"
+                    to="/professional-register"
                     className="text-blue-400 hover:text-blue-300 font-bold transition-colors duration-300 cursor-pointer"
                   >
                     Register now

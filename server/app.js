@@ -13,7 +13,13 @@ dotenv.config();
 const app = express();
 
 // Middleware
-app.use(cors());
+app.use(cors({
+  origin: [
+    'https://student-jobs-mauve.vercel.app', // Your live frontend
+    'http://localhost:5173'                  // Your local frontend (Vite default)
+  ],
+  credentials: true
+}));
 app.use(express.json());
 
 // Routes
